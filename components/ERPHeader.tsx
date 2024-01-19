@@ -1,7 +1,7 @@
 "use client";
-import useThemeStore from "@/context/store";
+import SideHeaderSlider from "@/components/SideHeaderSlider";
 import { usePathname } from "next/navigation";
-import React, { useEffect, useState } from "react";
+import React from "react";
 import Image from "next/image";
 import Logo from "@/assets/Logo.svg";
 import Link from "next/link";
@@ -23,7 +23,7 @@ function ERPHeader() {
       <div className="flex justify-between items-center bg-white py-1 lg:px-10 md:px-5 w-screen px-5">
         <div className="md:w-[20vw] flex items-center gap-2">
           <div className="md:hidden text-2xl">
-            <LuMenu />
+            <SideHeaderSlider />
           </div>
           <Image
             src={Logo}

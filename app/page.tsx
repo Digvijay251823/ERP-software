@@ -50,9 +50,11 @@ export default function Home() {
             <p className="text-2xl text-sky-400 font-extralight text-center">
               ENTERPRISE RESOURSE PLANNING
             </p>
-            <button className="text-white border-2 border-blue-900 px-5 py-2 text-xl rounded-lg transition-colors duration-500 hover:bg-blue-900">
-              Explore
-            </button>
+            <Link href={"/admin/dashboard"}>
+              <button className="text-white border-2 border-blue-900 px-5 py-2 text-xl rounded-lg transition-colors duration-500 hover:bg-blue-900">
+                Explore
+              </button>
+            </Link>
           </div>
         </div>
       </div>
