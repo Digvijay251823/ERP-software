@@ -11,7 +11,9 @@ function ERPHeaderMobile() {
   const pathname = usePathname();
   return (
     <div
-      className={`fixed bottom-0 left-0 right-0 bg-white flex items-center justify-evenly md:hidden py-3 rounded-t-lg `}
+      className={`fixed bottom-0 left-0 right-0 bg-white items-center justify-evenly md:hidden py-3 rounded-t-lg ${
+        pathname === "/" ? "hidden" : "flex"
+      }`}
     >
       <Link href={"/admin/home/employees"}>
         <div
